@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <title>Santino's Pizza</title>
 
@@ -104,9 +107,7 @@
       <!--Mask color-->
       <div class="view">
         <!--Video source-->
-        <video class="video-fluid" autoplay loop muted>
-          <source src="https://www.vidsplay.com/wp-content/uploads/2017/05/pizza.mp4" type="video/mp4" />
-        </video>
+        <img src="https://samanthaarriaga.github.io/Santino/imgs/b1.jpg"/>
         <div class="mask rgba-purple-slight"></div>
       </div>
 
@@ -126,9 +127,8 @@
       <!--Mask color-->
       <div class="view">
         <!--Video source-->
-        <video class="video-fluid" autoplay loop muted>
-          <source src="https://gcs-vimeo.akamaized.net/exp=1552722311~acl=%2A%2F401999344.mp4%2A~hmac=c2a06626c9df377f8c2f9218725eae3fc5d8f27d62070277e0be296fa9ace014/vimeo-prod-skyfire-std-us/01/2157/5/135788455/401999344.mp4" type="video/mp4" />
-        </video>
+         <img src="https://samanthaarriaga.github.io/Santino/imgs/b1.jpg"/>
+      
         <div class="mask rgba-black-strong"></div>
       </div>
 
@@ -164,24 +164,45 @@
     <h1 class="my-4">Arma tu pizza</h1>
 
     
+<div class="row">
+	    <div class="col-lg-6">
+	    <div class="card" style="margin:50px 0">
+                <div class="card-header">Ingredientes</div>
+            
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-group-item-action">
+                        Aceitunas
+                    <label class="checkbox">
+                    <input type="checkbox" onchange="showigredients(this.checked,'#aceitunas')" name="aceitunas" value="aceitunas">
+                    <span class="success"></span>
+                    </label>
+                    </li>
+                     <li class="list-group-item">
+                        Cebolla
+                    <label class="checkbox">
+                    <input type="checkbox" onchange="showigredients(this.checked,'#cebolla')" name="cebolla" value="cebolla">
+                    <span class="success"></span>
+                    </label>
+                    </li>
+                     <li class="list-group-item">
+                        Pimiento
+                    <label class="checkbox">
+                    <input type="checkbox" onchange="showigredients(this.checked,'#pimiento')" name="pimiento" value="pimiento">
+                    <span class="success"></span>
+                    </label>
+                    </li>
+                     <li class="list-group-item">
+                        Bacon
+                    <label class="checkbox">
+                    <input type="checkbox" onchange="showigredients(this.checked,'#bacon')" name="bacon" value="bacon">
+                    <span class="success"></span>
+                    </label>
+                    </li>
+                    
+                </ul>
+            </div> 
+            </div>
 
-
-   
-    <div class="row">
-      <div class="col-lg-6">
-      
-        <p>Elije tus ingredientes:</p>
-      <div class="form-check">
-    
-          
-        
-    <input type="checkbox" onchange="showigredients(this.checked,'#aceitunas')" name="aceitunas" value="aceitunas"> Aceitunas<br>
-    <input type="checkbox" onchange="showigredients(this.checked,'#cebolla')" name="cebolla" value="cebolla"> cebolla<br>
-    <input type="checkbox" onchange="showigredients(this.checked,'#pimiento')" name="pimiento" value="pimiento">pimiento<br>
-    <input type="checkbox" onchange="showigredients(this.checked,'#bacon')" name="bacon" value="bacon">bacon<br>
-	</div>
-    </div>
-        
      
       <div class="col-lg-6">
         <div style="position: relative; margin: 10px 0 500px 10px;">
