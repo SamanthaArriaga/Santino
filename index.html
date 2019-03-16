@@ -165,47 +165,11 @@
 
     
 <div class="row">
-	    <div class="col-lg-6">
-	    <div class="card" style="margin:50px 0">
-                <div class="card-header">Ingredientes</div>
-            
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item list-group-item-action">
-                        Aceitunas
-                    <label class="checkbox">
-                    <input type="checkbox" onchange="showigredients(this.checked,'#aceitunas')" name="aceitunas" value="aceitunas">
-                    <span class="success"></span>
-                    </label>
-                    </li>
-                     <li class="list-group-item">
-                        Cebolla
-                    <label class="checkbox">
-                    <input type="checkbox" onchange="showigredients(this.checked,'#cebolla')" name="cebolla" value="cebolla">
-                    <span class="success"></span>
-                    </label>
-                    </li>
-                     <li class="list-group-item">
-                        Pimiento
-                    <label class="checkbox">
-                    <input type="checkbox" onchange="showigredients(this.checked,'#pimiento')" name="pimiento" value="pimiento">
-                    <span class="success"></span>
-                    </label>
-                    </li>
-                     <li class="list-group-item">
-                        Bacon
-                    <label class="checkbox">
-                    <input type="checkbox" onchange="showigredients(this.checked,'#bacon')" name="bacon" value="bacon">
-                    <span class="success"></span>
-                    </label>
-                    </li>
-                    
-                </ul>
-            </div> 
-            </div>
+	    
 
      
       <div class="col-lg-6">
-        <div style="position: relative; margin: 10px 0 500px 10px;">
+        <div style="position: relative; margin: 10px 0 400px 10px;">
 	
        
          <img src="https://samanthaarriaga.github.io/Santino/imgs/pizza.png" class="pizza"/>
@@ -217,6 +181,103 @@
 	
 </div>
       </div>
+    <div class="col-lg-6">
+	    <div class="card" style="margin:50px 0">
+                <div class="card-header">Ingredientes</div>
+            
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-group-item-action">
+                        Aceitunas
+                    <label class="checkbox">
+                    <input type="checkbox" onchange="showigredients(this.checked,'#aceitunas')" name="aceitunas" value="aceitunas">
+                    <span class="warning"></span>
+                    </label>
+                    </li>
+                     <li class="list-group-item">
+                        Cebolla
+                    <label class="checkbox">
+                    <input type="checkbox" onchange="showigredients(this.checked,'#cebolla')" name="cebolla" value="cebolla">
+                    <span class="warning"></span>
+                    </label>
+                    </li>
+                     <li class="list-group-item">
+                        Pimiento
+                    <label class="checkbox">
+                    <input type="checkbox" onchange="showigredients(this.checked,'#pimiento')" name="pimiento" value="pimiento">
+                    <span class="warning"></span>
+                    </label>
+                    </li>
+                     <li class="list-group-item">
+                        Bacon
+                    <label class="checkbox">
+                    <input type="checkbox" onchange="showigredients(this.checked,'#bacon')" name="bacon" value="bacon">
+                    <span class="warning"></span>
+                    </label>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            </div>
+    
+    <div class="col-lg-12">
+	 
+            
+        <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div  id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-success btn-lg btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Comprar
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Nombre</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre">
+    <small id="emailHelp" class="form-text text-muted">...</small>
+  </div>
+ <div class="form-group">
+    <label for="exampleInputEmail1">Telefono</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Telefono">
+    <small id="emailHelp" class="form-text text-muted">...</small>
+  </div>
+ <div class="form-group">
+    <label for="exampleInputEmail1">Domicilio</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Domicilio">
+    <small id="emailHelp" class="form-text text-muted">...</small>
+  </div>
+  <div class="form-check">
+      <label for="exampleInputEmail1">Agrega complemento</label>
+      <ul>
+          <li>
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Coca</label>
+              </li>
+          <li>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Papas</label>
+              </li>
+          <li>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Bounless</label>
+              </li>
+          </ul>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Pedir</button>
+</form>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+            </div>
+    
     </div>
     <!-- /.row -->
    
