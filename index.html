@@ -76,13 +76,16 @@
              <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto" style="text-align: center">
           <li class="nav-item">
-            <a class="nav-link" href="about.html" style="color: #FEFEFE;">Nosotros</a>
+            <a class="nav-link" href="#Pizzas" style="color: #FEFEFE;">Pizzas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.html" style="color: #FEFEFE;">Productos</a>
+            <a class="nav-link" href="#Especialidades" style="color: #FEFEFE;">Especialidades</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html" style="color: #FEFEFE;">Contact</a>
+            <a class="nav-link" href="#Alitas" style="color: #FEFEFE;">Alitas</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#Complementos" style="color: #FEFEFE;">Complementos</a>
           </li>
         </ul>
       </div>
@@ -110,79 +113,27 @@
     
     </div>
   </nav>
-
+ <!-- Navigation -->
 
     
 
-  <header>
-<div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
-  <!--Indicators-->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-    <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
-    <li data-target="#video-carousel-example2" data-slide-to="1"></li>
-    <li data-target="#video-carousel-example2" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
-  <!--/.Indicators-->
-  <!--Slides-->
-  <div class="carousel-inner" role="listbox">
-    <!-- First slide
+  <div class="carousel-inner">
     <div class="carousel-item active">
-     
-      <div class="view">
-       
-        <video class="video-fluid" autoplay loop muted>
-          <source src="https://gcs-vimeo.akamaized.net/exp=1552722311~acl=%2A%2F401999344.mp4%2A~hmac=c2a06626c9df377f8c2f9218725eae3fc5d8f27d62070277e0be296fa9ace014/vimeo-prod-skyfire-std-us/01/2157/5/135788455/401999344.mp4" type="video/mp4" />
-        </video>
-        <div class="mask rgba-indigo-light"></div>
-      </div>
-
-     
-      <div class="carousel-caption">
-        <div class="animated fadeInDown">
-          <h3 class="h3-responsive">Come pizza</h3>
-          <p>Santino macaroni</p>
-        </div>
-      </div>
-     
+      <img class="d-block w-100" src="imgs/b2.jpg" alt="First slide">
     </div>
-   First slide -->
-
-    <!-- Second slide -->
-    <div class="carousel-item active">
-      <!--Mask color-->
-      
-        <!--Video source-->
-        <img class="d-block w-100" src="imgs/b2.jpg"/>
-        <div class="mask rgba-purple-slight"></div>
-  
-
-    
-    </div>
-    <!-- /.Second slide -->
-       <!-- Second slide -->
     <div class="carousel-item">
-      <!--Mask color-->
-      
-        <!--Video source-->
-        <img class="d-block w-100"  src="imgs/b3.jpg"/>
-        <div class="mask rgba-purple-slight"></div>
-    
-
+      <img class="d-block w-100" src="imgs/b3.jpg" alt="Second slide">
     </div>
-    <!-- /.Second slide -->
-    <!-- Second slide -->
     <div class="carousel-item">
-     
-        <img class="d-block w-100" src="imgs/b4.jpg"/>
-        <div class="mask rgba-purple-slight"></div>
-     
-
+      <img class="d-block w-100" src="imgs/b4.jpg" alt="Third slide">
     </div>
-    <!-- /.Second slide -->
-
   </div>
-  <!--/.Slides-->
-  <!--Controls-->
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -191,10 +142,10 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-  <!--/.Controls-->
 </div>
 <!--Carousel Wrapper-->
-  </header>
+
+
     <section id="Pizzas">
         <div class="container">
         
@@ -203,14 +154,7 @@
             <div class="row">
             
             <div class="col-md-3">
-                
-                <div>
-                <div style="    background-color: red;
-    color: white;
-    text-align: center;
-    border: 10px solid red;
-    width: 100%;
-    height: 100px;">
+              <div class="especialidadesTitle">
                 <h3>Chorizo</h3>    
                 </div>
                     <div >
@@ -218,25 +162,35 @@
                     </div>
                     <div class="row" style="padding: 1px 15px 30px;">
                    <div class="col-6" style="padding: 0"> <button type="button" class="btn btn-success btn-block">Pidela</button></div>
-                 <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block">Detalles</button></div>
+                 <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#Chorizo">Detalles</button></div>
             
                 </div>
                
-                
-                </div>
+    <div class="modal fade" id="Chorizo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Pizza de chorizo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+     
+    </div>
+  </div>
+</div>   
+               
                 
                 
                 
                 </div>
             <div class="col-md-3">
                 
-                <div>
-                <div style="    background-color: red;
-    color: white;
-    text-align: center;
-    border: 10px solid red;
-    width: 100%;
-    height: 100px;">
+               
+                 <div class="especialidadesTitle">
                 <h3>Chorizo con jalapeño</h3>    
                 </div>
                     <div >
@@ -248,22 +202,15 @@
             
                 </div>
                
+               
+                
+                
                 
                 </div>
+            <div class="col-md-3">
                 
-                
-                
-                </div>
-            
-                <div class="col-md-3">
-                
-                <div>
-                <div style="    background-color: red;
-    color: white;
-    text-align: center;
-    border: 10px solid red;
-    width: 100%;
-    height: 100px;">
+           
+                <div class="especialidadesTitle">
                 <h3>Jamón</h3>    
                 </div>
                     <div >
@@ -275,22 +222,15 @@
             
                 </div>
                
+               
+                
+                
                 
                 </div>
+            <div class="col-md-3">
                 
-                
-                
-                </div>
-            
-                <div class="col-md-3">
-                
-                <div>
-                <div style="    background-color: red;
-    color: white;
-    text-align: center;
-    border: 10px solid red;
-    width: 100%;
-    height: 100px;">
+               
+                 <div class="especialidadesTitle">
                 <h3>Jamón con champiñones</h3>    
                 </div>
                     <div >
@@ -303,7 +243,6 @@
                 </div>
                
                 
-                </div>
                 
                 
                 
@@ -314,13 +253,7 @@
             
             <div class="col-md-3">
                 
-                <div>
-                <div style="    background-color: red;
-    color: white;
-    text-align: center;
-    border: 10px solid red;
-    width: 100%;
-    height: 100px;">
+                 <div class="especialidadesTitle">
                 <h3>Pepperoni</h3>    
                 </div>
                     <div >
@@ -330,7 +263,7 @@
                    <div class="col-6" style="padding: 0"> <button type="button" class="btn btn-success btn-block">Pidela</button></div>
                  <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block">Detalles</button></div>
             
-                </div>
+        
                
                 
                 </div>
@@ -340,14 +273,8 @@
                 </div>
             <div class="col-md-3">
                 
-                <div>
-                <div style="    background-color: red;
-    color: white;
-    text-align: center;
-    border: 10px solid red;
-    width: 100%;
-    height: 100px;">
-                <h3>Chorizo con pepperoni</h3>    
+                <div class="especialidadesTitle">
+                <h3>Pepperoni con chorizo</h3>    
                 </div>
                     <div >
                     <img src="imgs/p_pepperonichorizo.jpg" style="width: 100%; height: 210px" />
@@ -360,20 +287,9 @@
                
                 
                 </div>
+            <div class="col-md-3">
                 
-                
-                
-                </div>
-            
-                <div class="col-md-3">
-                
-                <div>
-                <div style="    background-color: red;
-    color: white;
-    text-align: center;
-    border: 10px solid red;
-    width: 100%;
-    height: 100px;">
+              <div class="especialidadesTitle">
                 <h3>Pepperoni con jalapeño</h3>    
                 </div>
                     <div >
@@ -386,21 +302,14 @@
                 </div>
                
                 
-                </div>
+               
                 
                 
                 
                 </div>
-            
-                <div class="col-md-3">
+            <div class="col-md-3">
                 
-                <div>
-                <div style="    background-color: red;
-    color: white;
-    text-align: center;
-    border: 10px solid red;
-    width: 100%;
-    height: 100px;">
+                 <div class="especialidadesTitle">
                 <h3>Pepperoni con salami</h3>    
                 </div>
                     <div >
@@ -410,7 +319,7 @@
                    <div class="col-6" style="padding: 0"> <button type="button" class="btn btn-success btn-block">Pidela</button></div>
                  <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block">Detalles</button></div>
             
-                </div>
+                
                
                 
                 </div>
@@ -427,7 +336,7 @@
     
     </section>
     <div class="clearfix" ></div>
-        <section id="Pizzas">
+        <section id="Especialidades">
         <div class="container">
         
         <h1 class="my-4">Especialidades</h1>
@@ -436,38 +345,121 @@
             
             <div class="col-md-4">
                 
-                <div>
-            
+                 <div class="especialidadesTitle">
+                <h3>Porky</h3>    
+                </div>
                     <div >
-                    <img src="imgs/especialty.jpg" style="width: 100%" />
+                    <img src="imgs/porky.jpg" style="width: 100%; height: 210px" />
                     </div>
-                   
-                
-                </div>
-                
-                
-                
-                </div>
-                <div class="col-md-4">
-                
-                <div>
+                    <div class="row" style="padding: 1px 15px 30px;">
+                   <div class="col-6" style="padding: 0"> <button type="button" class="btn btn-success btn-block">Pidela</button></div>
+                 <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block">Detalles</button></div>
             
+        
+               
+                
+                </div>
+                
+                
+                
+                </div>
+            <div class="col-md-4">
+                
+                 <div class="especialidadesTitle">
+                <h3>Mexicana</h3>    
+                </div>
                     <div >
-                    <img src="imgs/especialty.jpg" style="width: 100%" />
+                    <img src="imgs/Mexicana.jpg" style="width: 100%; height: 210px" />
                     </div>
-                   
+                    <div class="row" style="padding: 1px 15px 30px;">
+                   <div class="col-6" style="padding: 0"> <button type="button" class="btn btn-success btn-block">Pidela</button></div>
+                 <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block">Detalles</button></div>
+            
+        
+               
                 
                 </div>
                 
                 
                 
                 </div>
-                <div class="col-md-4">
+            <div class="col-md-4">
                 
+                 <div class="especialidadesTitle">
+                <h3>Hawaiana</h3>    
+                </div>
+                    <div >
+                    <img src="imgs/Hawaiana.jpg" style="width: 100%; height: 210px" />
+                    </div>
+                    <div class="row" style="padding: 1px 15px 30px;">
+                   <div class="col-6" style="padding: 0"> <button type="button" class="btn btn-success btn-block">Pidela</button></div>
+                 <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block">Detalles</button></div>
+            
+        
+               
+                
+                </div>
+                
+                
+                
+                </div>
+           
+            
+            
+            </div>
+            
+             
+            <div class="row">
+            
+            <div class="col-md-4">
+                
+                 <div class="especialidadesTitle">
+                <h3>Fungi</h3>    
+                </div>
+                    <div >
+                    <img src="imgs/fungi.jpg" style="width: 100%; height: 210px" />
+                    </div>
+                    <div class="row" style="padding: 1px 15px 30px;">
+                   <div class="col-6" style="padding: 0"> <button type="button" class="btn btn-success btn-block">Pidela</button></div>
+                 <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block">Detalles</button></div>
+            
+        
+               
+                
+                </div>
+                
+                
+                
+                </div>
+            <div class="col-md-4">
+                
+                 <div class="especialidadesTitle">
+                <h3>Boneless</h3>    
+                </div>
+                    <div >
+                    <img src="imgs/Bounles.jpg" style="width: 100%; height: 210px" />
+                    </div>
+                    <div class="row" style="padding: 1px 15px 30px;">
+                   <div class="col-6" style="padding: 0"> <button type="button" class="btn btn-success btn-block">Pidela</button></div>
+                 <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block">Detalles</button></div>
+            
+        
+               
+                
+                </div>
+                
+                
+                
+                </div>
+           
+             <div class="col-md-4">
+              <div class="especialidadesTitle">
+                <h3>Prepara tu pizza</h3>    
+                </div>   
                 <div>
             
                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
+  Click aqui!
 </button>
                    
                 
@@ -476,45 +468,109 @@
                 
                 
                 </div>
-            
-            
-            </div>
         
+        </div>
         </div>
         
     
     
     </section>
 <div class="clearfix" ></div>
-    <section id="Pizzas">
+    <section id="Alitas">
         <div class="container">
         
         <h1 class="my-4">Para volar</h1>
             
             <div class="row">
             
-            <div class="col-md-6">
+          <div class="col-md-4">
                 
-                <div>
-            
+                 <div class="especialidadesTitle">
+                <h3>Boneless</h3>    
+                </div>
                     <div >
-                    <img src="imgs/especialty.jpg" style="width: 100%" />
+                    <img src="imgs/boneless.jpg" style="width: 100%; height: 210px" />
                     </div>
-                   
-                
-                </div>
-                
-                
-                
-                </div>
-                <div class="col-md-6">
-                
-                <div>
+                    <div class="row" style="padding: 1px 15px 30px;">
+                   <div class="col-6" style="padding: 0"> <button type="button" class="btn btn-success btn-block">Pidela</button></div>
+                 <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block"data-toggle="modal" data-target="#Boneles">Detalles</button></div>
             
+        
+               
+                
+                </div>
+  <div class="modal fade" id="Boneles" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Boneless</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        330g de Ricos Boneless (palomitas de pollo empanisadas) bañados en salsa Búfalo o en BBQ. Incluyen 1 aderezo blue cheese y zanahoria.
+
+
+      </div>
+     
+    </div>
+  </div>
+</div>                 
+                
+                
+                </div>
+          <div class="col-md-4">
+                
+                 <div class="especialidadesTitle">
+                <h3>Alitas bufalo</h3>    
+                </div>
                     <div >
-                    <img src="imgs/especialty.jpg" style="width: 100%" />
+                    <img src="imgs/alitas.jpg" style="width: 100%; height: 210px" />
                     </div>
-                   
+                    <div class="row" style="padding: 1px 15px 30px;">
+                   <div class="col-6" style="padding: 0"> <button type="button" class="btn btn-success btn-block">Pidela</button></div>
+                 <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#myModalAlas">Detalles</button></div>
+            
+<!-- Modal -->
+  <div class="modal fade" id="myModalAlas" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Alitas bufalo</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>330g de ricas alitas fritas bañadas en salsa Búfalo. Incluyen 1 aderezo blue cheese y zanahoria. </p>
+        </div>
+      </div>
+      
+    </div>
+  </div>        
+               
+                
+                </div>
+                
+                
+                
+                </div>
+          <div class="col-md-4">
+                
+                 <div class="especialidadesTitle">
+                <h3>Alitas BBQ</h3>    
+                </div>
+                    <div >
+                    <img src="imgs/alitasbbq.jpg" style="width: 100%; height: 210px" />
+                    </div>
+                    <div class="row" style="padding: 1px 15px 30px;">
+                   <div class="col-6" style="padding: 0"> <button type="button" class="btn btn-success btn-block">Pidela</button></div>
+                 <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block">Detalles</button></div>
+            
+        
+               
                 
                 </div>
                 
@@ -522,6 +578,49 @@
                 
                 </div>
             
+            </div>
+            <div class="row">
+            
+          <div class="col-md-6">
+                
+                 <div class="especialidadesTitle">
+                <h3>Alitas bufalo con papas</h3>    
+                </div>
+                    <div >
+                    <img src="imgs/alitaspapas.jpg" style="width: 100%; height: 210px" />
+                    </div>
+                    <div class="row" style="padding: 1px 15px 30px;">
+                   <div class="col-6" style="padding: 0"> <button type="button" class="btn btn-success btn-block">Pidela</button></div>
+                 <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block">Detalles</button></div>
+            
+        
+               
+                
+                </div>
+                
+                
+                
+                </div>
+          <div class="col-md-6">
+                
+                 <div class="especialidadesTitle">
+                <h3>Alitas BBQ con papas</h3>    
+                </div>
+                    <div >
+                    <img src="imgs/alitasbbqpapas.jpg" style="width: 100%; height: 210px" />
+                    </div>
+                    <div class="row" style="padding: 1px 15px 30px;">
+                   <div class="col-6" style="padding: 0"> <button type="button" class="btn btn-success btn-block">Pidela</button></div>
+                 <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block">Detalles</button></div>
+            
+        
+               
+                
+                </div>
+                
+                
+                
+                </div>
             
             </div>
         
@@ -532,47 +631,98 @@
     </section>
   
 <div class="clearfix" ></div>
-     <section id="Pizzas">
-        <div class="container">
+     <section id="Complementos">
+          <div class="container">
         
         <h1 class="my-4">Complementos</h1>
             
             <div class="row">
             
-            <div class="col-md-6">
+          <div class="col-md-3">
                 
-                <div>
-            
+                 <div class="especialidadesTitle">
+                <h3>Papas criscut</h3>    
+                </div>
                     <div >
-                    <img src="imgs/especialty.jpg" style="width: 100%" />
+                    <img src="imgs/papascriscut.jpg" style="width: 100%; height: 210px" />
                     </div>
-                   
-                
-                </div>
-                
-                
-                
-                </div>
-                <div class="col-md-6">
-                
-                <div>
+                    <div class="row" style="padding: 1px 15px 30px;">
+                   <div class="col-6" style="padding: 0"> <button type="button" class="btn btn-success btn-block">Pidela</button></div>
+                 <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block">Detalles</button></div>
             
+        
+               
+                
+                </div>
+                
+                
+                
+                </div>
+          <div class="col-md-3">
+                
+                 <div class="especialidadesTitle">
+                <h3>Papas gajo</h3>    
+                </div>
                     <div >
-                    <img src="imgs/especialty.jpg" style="width: 100%" />
+                    <img src="imgs/papasgajo.jpeg" style="width: 100%; height: 210px" />
                     </div>
-                   
-                
-                </div>
-                
-                
-                
-                </div>
+                    <div class="row" style="padding: 1px 15px 30px;">
+                   <div class="col-6" style="padding: 0"> <button type="button" class="btn btn-success btn-block">Pidela</button></div>
+                 <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block">Detalles</button></div>
             
+        
+               
+                
+                </div>
+                
+                
+                
+                </div>
+          <div class="col-md-3">
+                
+                 <div class="especialidadesTitle">
+                <h3>Papas pizza</h3>    
+                </div>
+                    <div >
+                    <img src="imgs/papaspiza.jpg" style="width: 100%; height: 210px" />
+                    </div>
+                    <div class="row" style="padding: 1px 15px 30px;">
+                   <div class="col-6" style="padding: 0"> <button type="button" class="btn btn-success btn-block">Pidela</button></div>
+                 <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block">Detalles</button></div>
+            
+        
+               
+                
+                </div>
+                
+                
+                
+                </div>
+        
+          <div class="col-md-3">
+                
+                 <div class="especialidadesTitle">
+                <h3>Tender de pollo</h3>    
+                </div>
+                    <div >
+                    <img src="imgs/tenderpollo.jpg" style="width: 100%; height: 210px" />
+                    </div>
+                    <div class="row" style="padding: 1px 15px 30px;">
+                   <div class="col-6" style="padding: 0"> <button type="button" class="btn btn-success btn-block">Pidela</button></div>
+                 <div class="col-6"  style="padding: 0"> <button type="button" class="btn btn-warning btn-block">Detalles</button></div>
+            
+        
+               
+                
+                </div>
+                
+                
+                
+                </div>
             
             </div>
         
         </div>
-        
     
     
     </section>
@@ -590,11 +740,31 @@
     
     </section>
     <div class="clearfix" ></div>
-       <section id="Pizzas">
+       <section id="Escucha">
         <div class="container">
         
         <h1 class="my-4">Queremos escucharte</h1>
-            
+         <form>
+  <div class="form-group">
+     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre ...">
+   
+  </div>
+<div class="form-group">
+     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Telefono...">
+   
+  </div>
+<div class="form-group">
+     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo...">
+   
+  </div>
+<div class="form-group">
+       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <small id="emailHelp" class="form-text text-muted">Comentario</small>
+  </div>
+ 
+ 
+  <button type="submit" class="btn btn-success">Enviar</button>
+</form>   
           
         
         </div>
@@ -607,7 +777,36 @@
         <div class="container">
         
         <h1 class="my-4">Bolsa de trabajo</h1>
-            
+             <form>
+  <div class="form-group">
+     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre ...">
+   
+  </div>
+<div class="form-group">
+     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Telefono...">
+   
+  </div>
+<div class="form-group">
+     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo...">
+   
+  </div>
+<div class="form-group">
+       <select id="inputState" class="form-control">
+        <option selected>Vacante</option>
+        <option>Cocina</option>
+           <option>Limpieza</option>
+           <option>Repartidor</option>
+      </select>
+  </div>
+<div class="form-group">
+       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <small id="emailHelp" class="form-text text-muted">Comentario</small>
+  </div>
+ 
+ 
+  <button type="submit" class="btn btn-success">Enviar</button>
+</form>   
+        
           
         
         </div>
@@ -760,7 +959,7 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Arma tu pizza</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -768,7 +967,7 @@
       <div class="modal-body">
        <div class="container">
 
-    <h1 class="my-4">Arma tu pizza</h1>
+   
 
     
 <div class="row">
