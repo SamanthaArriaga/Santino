@@ -34,10 +34,12 @@
   /*top: 40px;
   left : 40px;*/
   z-index: 1;
-    top: 0;
+    
 left: 0;
 right: 0;
 margin: auto;
+        bottom: 0px;
+    top: 550px;
 }
 
 .pizza
@@ -46,10 +48,12 @@ margin: auto;
   height:350px;
   width:350px;
   z-index: 1;
-    top: 0;
+    
 left: 0;
 right: 0;
 margin: auto;
+        bottom: 0px;
+    top: 550px;
 }
 .clearfix{
     
